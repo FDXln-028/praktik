@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>personal website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    font-family: verdana;
+}
+
+
+.navigasi{
+    background-color: #3b4997;
+    width: 100%;
+    height: 70px;
+    color: white;
+    position: fixed;
+}
+
+
+.logo {
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+}
+
+
+.menu {
+    margin-left: 800px;
+    padding-top: 27px;
+}
+
+
+.menu ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.menu ul li a:hover {
+    color: lightskyblue;
+    font-style: italic;
+}
+
+
+.banner {
+    background-color: #3b5997;
+    height: 600px;
+    text-align: center;
+    color: white;
+}
+
+.banner img{
+    border-radius:  100px;
+    height: 150px;
+    border: 6px solid white;
+    margin-top: 100px;
+
+}
+
+.banner h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+
+.banner button {
+    margin-top: 60px;
+    padding: 10px;
+    width: 400px;
+    border-radius: 50px;
+    border: none;
+}
+
+.banner button:hover {
+    background-color: #3b5999;
+    border:1px solid white;
+    color: white;
+}
+
+h1 span:before{
+    content: '';
+    animation: gerak infinite 8s ease;
+    transform: translateY(-50%)
+    color: lightlue;
+    font-size: 50px;
+}
+
+@keyframes gerak {
+    0% {
+        content: 'Selamat Datang'
+    }
+
+    50% {
+        content: 'Saya Muhammad Fadlan'
+    }
+    
+    100% {
+        content: 'Terima Kasih Sudah Singgah!'
+    }
+}
+
+
+.box-pendidikan {
+    text-align: center;
+    color: #4d4d4d;
+    margin-top: 90px;
+    align-content: center;
+}
+
+
+.box-kiri, .box-tengah, .box-kanan {
+    width: 300px;
+    height: 500px;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 30px 30px;
+    margin: 70px 20px 20px 55px;
+    border-radius: 10px;
+    float: left;
+}
+
+
+.box-kiri:hover, .box-tengah:hover, .box-kanan:hover {
+    background-color: #3b5999;
+    color: white;
+}
+
+.box-pendidikan h3, p{
+   
+    margin-top: 10px;
+    margin-bottom: 13px;
+    padding: 0px 20px;
+ }
+
+ .box-softskill {
+    text-align: center;
+    color: #4d4d4d;
+    margin: 0px auto;
+    margin-top: 150px;
+ }
+
+
+ .box-kontak img {
+    width: 200px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+ }
+
+ .box-kontak {
+    text-align: center;
+    color: #4d4d4d;
+    margin-top: 750px;
+
+ }
+
+ .footer {
+    background-color: grey;
+    width: 100%;
+    height: 40px;
+    color: white;
+    padding: 3px;
+    margin: 50px auto 0px;
+    text-align: center;
+ }
+</style>
+
+<body>
+<!-- NAVIGASI -->
+<div class="navigasi">
+    <div class="logo">
+        <h2>Biodataku</h2>
+    </div>
+
+    <div class="menu">
+        <ul>
+            <li><a href="#Hai">Hai!</a></li>
+            <li><a href="#Pendidikan">Pendidikan</a></li>
+            <li><a href="#Softskill">Softskill</a></li>
+            <li><a href="#Kontak">Kontak</a></li>  
+        </ul>
+    </div>
+</div>
+
+
+<!-- INI BANNER -->
+<div class="banner" id="Hai">
+    <img src="image/me.jpg">
+    <h2>Hai ... <span></span></h1>
+    <p>Salam hangat dari saya dan semoga kita semua sehat selalu</p>
+
+    <a href=""><button>Selengkapnya</button></a>
+</div>
+
+<!-- INI RIWAYAT PENDIDIKAN -->
+<div class="box-pendidikan">
+<br id="Pendidikan"><br><br>
+    <h1>Riwayat Pendidikan</h1>
+    <div class="box-kiri">
+        <img src="image/sd 1.png">
+        <p><h3>Sekolah Dasar</h3></p>
+        <p>Saya bersekolah dasar di SDN Cipayung Girang 01, Kecamatan Megamendung, Kab. Bogor - Jawa Barat</p>
+    </div>
+
+    <div class="box-tengah">
+        <img src="image/smp (1).png">
+        <p><h3>Sekolah Menengah Pertama</h3></p>
+        <p>Saya bersekolah dasar di Yayasan Miftahul Huda Kecamatan Megamendung, Kab. Bogor - Jawa Barat</p>
+    </div>
+
+    <div class="box-kanan">
+        <img src="image/smk (1).png">
+        <p><h3>Sekolah Menengah Keatas</h3></p>
+        <p>Saya bersekolah dasar di SMK Wikrama Bogor, Sindangsari, Kec. Bogor Timur, Kota Bogor - Jawa Barat</p>
+    </div>
+
+
+</div>
+
+<!-- INI RIWAYAT SOFTSKILL -->
+
+<div class="box-softskill" id="Softskill">
+    <h1>SoftSkill-ku</h1>
+    <div class="box-kiri">
+        <img src="image/team work 1.png">
+        <p><h3>Team Work</h3></p>
+        <p>Team Work yang baik berarti mampu membagi tugas secara efektif dan efisien dan menyelesaikannya dengan baik</p>
+    </div>
+
+    <div class="box-tengah">
+        <img src="image/adaptive 1.png">
+        <p><h3>Adaptif</h3></p>
+        <p>Adaptif merupakan kemampuan beradaptasi atau dapat menyesuaikan diri dengan perubahan yang ada dengan cepat. Kemampuan adaptif menuntut setiap orang untuk bisa beradaptasi dengan lingkungan kerja secara baik, begitu pula dengan perubahan seperti bekerja dari rumah, bekerja secara daring, dan sebagainya</p>
+    </div>
+
+    <div class="box-kanan">
+        <img src="image/time management 1.png">
+        <p><h3>Time Management</h3></p>
+        <p>Memiliki Time Management yang baik berarti mampu mengerjakan setiap pekerjaan dengan baik tanpa ada yang terlewatkan. Time Management juga berarti bekerja dengan efektif tanpa membuang-buang waktu, mengambil keputusan dengan tepat, dan tahan banting dengan berbagai tekanan yang dihadapi di dunia kerja</p>
+    </div>
+</div>
+
+<div class="box-kontak" id="Kontak">
+    <h1>Kontak Saya</h1>
+    <img src="image/contact me.png">
+    <h2>085714925706</h2>
+
+</div>
+
+
+<div class="footer">
+    <p>Copyright : Muhammad Fadlan | NIS : 12511164</p>
+
+</div>
+
+
+
+
+</body>
+</html>
